@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        .navbar {
+            background-color: #2874f0;
+           
+            
+        }
+
+        .container-fluid {
+            
+            max-width: 1200px; 
+            padding-left: 0 15px;
+        }
+
+        .navbar-brand img {
+            max-height: 40px;
+            width: auto;
+        }
+
+        .search-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 560px; 
+        }
+
+        .search-input {
+            width: 100%;
+            border-radius: 2px;
+            border: none;
+            padding: 8px 40px 8px 15px; 
+            font-size: 14px;
+            outline: none;
+        }
+
+        #searchlogo {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            max-height: 20px;
+            pointer-events: none; 
+        }
+
+            .nav-link {
+            color: white !important;
+        }
+        .navbar-nav{
+            padding-right: 0% !important;
+            align-items: center;
+            
+        }
+        #login{
+            border: 1px solid #fff;
+            color: #2874f0;
+            font-weight: 550;
+            text-decoration: none;
+            background-color: #fff;
+            padding: 5px 40px;
+            align-items: center;
+            width: auto;
+            max-width: 200px;
+        }
+        #cartlogo{
+
+            max-height: 40px;
+            
+            align-items: center;
+            width: auto;
+        }
+        .nav-link span{
+            font-weight: 600;
+        }
+               div.a{   display: flex;
+            justify-content: flex-start;
+            justify-content: space-evenly;
+            align-items: center; 
+            padding: 8px 100px;
+            /* margin-left: ; */
+                flex-wrap: nowrap;
+            overflow-y: auto;
+            background-color: #fff;
+            gap: 20px;
+            /* height: 100px; */    
+            width: 100%;
+            height: auto;
+            max-height: 120px;
+           
+        }
+        div.a img{
+            width:100% ;
+            max-width: 80px;
+            align-items: center;
+            object-fit: contain;
+            height:auto;
+            max-height: 140px;
+        }
+        body{
+            background-color: #f1f3f6;
+            /* overflow-y: scroll  ; */
+            margin: 0;
+            overflow-x: hidden;
+        }
+        .c {
+        text-align: center;
+        flex: 0 1 auto; /* Allows items to shrink/grow naturally */
+        min-width: 70px;
+    }
+       .c select{
+        border: none;
+        font-weight: 550;
+        outline: none;
+        align-items: center;
+       }
+       .c p{
+        font-weight: 550;
+       }
+
+       .d{
+        display: grid;
+        gap: 20px;
+        margin: 20px 6%;
+        padding: 10px 10px 10px 10px;
+        height: auto;
+        background-color: transparent;
+        grid-template-columns: 80% 20%;
+       }
+       .deals img{
+        width: auto;
+        height: 150px !important;
+       }
+
+       .d .e{
+        width: auto;
+        max-width: 98%;
+        padding: 15px;
+                height: 100%;
+
+        background-color: #fff;
+       }
+       .e img{
+        width: auto;
+        height: 40px;
+       }
+       .d .f{
+        width: auto;
+        max-width: 18;
+        padding: 15px;
+
+        background-color: #fff;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+        /* max-width: %; */
+                height: 100%;
+       }
+       .e img{
+        /* height: auto; */
+        max-height: none;
+       }
+       .g{
+        /* display: grid; */
+        /* gap: 20px; */
+        margin: 20px 6%;
+        padding: 10px 10px 10px 10px;
+        background-color: #fff;
+        /* height: auto; */
+        height: 330px;
+        width: auto;
+        /* background-color: transparent; */
+
+       }
+       #view{
+        
+        margin-left: 60%;
+        margin-right: 0%;
+        background-color: #2874f0;
+        border: 1px solid white;
+        color: #f1f3f6;
+       }
+       #view1{
+        display: flex;
+        justify-content: center;
+        margin-left: 90%;
+        margin-right: 0%;
+            /* margin-top: 10%; */
+        background-color: #2874f0;
+        border: 1px solid white;
+        color: #f1f3f6;
+
+       }
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">     
+                <img src="Flipkart.jpg" id="logo" alt="Flipkart">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex flex-grow-1 mx-lg-4 me-lg-5 my-2 my-lg-0">
+                    <div class="search-wrapper">
+                        <input class="form-control search-input" type="search" placeholder="Search for products, brands and more">
+                        <img src="sear.webp" id="searchlogo" alt="search-icon">
+                    </div>
+                </form>
+
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-lg-4">
+                    <li class="nav-item"><input type="button" value="Login" id="login">
+                    
+                    
+                    
+                    </li>
+                    
+                    <li class="nav-item dropdown ms-lg-3">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" style="font-weight: 550;">More</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Tshirs</a></li>
+                            <li><a class="dropdown-item" href="#">Shirts</a></li>
+                        </ul>
+                    </li>
+                                        <!-- <li class="nav-item"><a class="nav-link" href="#">Cart</a></li> -->
+                                        <li class="nav-item ms-lg-5">
+                                            <a class="nav-link d-flex align-items-center" href="#">
+                                                <img src="cartlogo1.png" id="cartlogo" alt="cart">
+                                                <span class="ms-2">Cart</span>
+                                            </a>
+                                        </li>
+
+                    
+                    <!-- <li class="nav-item"><a class="nav-link" href="#">Cart</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="a">
+        <div class="c">
+        <img src="offer.webp" alt="img1">
+        <p>Top Offers</p></div>
+        <div class="c">
+        <img src="grocery.png" alt="img2">
+        <p>Grocery</p></div>
+        
+        <div class="c">
+
+        <img src="mobile.png" alt="img3">
+        <p>Mobiles</p></div>
+        <div class="c">
+        <img src="fashion.png" alt="img4">
+      <p>  <select>
+            <option value="Fashion" >
+                Fashion
+            </option>
+        </select></p>
+
+    </div>
+        <div class="c">
+        <img src="Electronics.png" alt="img5">
+        <p>  <select>
+            <option value="Fashion">
+                Electronics
+            </option>
+        </select></p></div>
+
+        <div class="c">
+
+        <img src="homw.png" alt="img6">
+        <p>  <select>
+            <option value="Fashion">
+                Home
+            </option>
+        </select></p></div>
+
+        <div class="c">
+
+        <img src="appliances.png" alt="img7">
+        <p>  <select>
+            <option value="Fashion">
+                Appliances
+            </option>
+        </select></p></div>
+
+        <div class="c">
+        <img src="travel.png" alt="img8">
+        <p>  
+                Travel
+           </p></div>
+
+        <div class="c">
+        <img src="toys.webp" alt="img9">
+        <p>  <select>
+            <option value="Fashion">
+                toys
+            </option>
+        </select></p></div>
+    </div>
+    <div class="b"></div>
+
+
+    <div class="d">
+        <div class="e">Deals Of the Day <img src="timer.png">
+            <input type="button" value="VIEW ALL" id="view">
+             <hr>
+             <div class="deals" style="min-width: 180px;" >
+             <img src="OIP.webp" alt="" class="img-fluid mb-2" style="height: 400px; object-fit: contain;">
+            <p class="mb-2 small">Casio.Fastrack,sonata...</p>
+            <p class="text-success mb-1 small">Upto 80%+Extra 10%Off</p>
+            <p class="text-muted">Knockout Deals!</p>
+            </div>
+            
+          
+
+
+
+        </div>
+        
+        
+        <div class="f">        <img src="add.png" alt="image" style="width: 100%; height: 270px; object-fit: cover;">
+        </div>
+    </div>
+    <div class="g">
+
+            <p>Books and Music Instument</p>
+            <input type="button" value="VIEW ALL" id="view1">
+
+            
+            <hr>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
